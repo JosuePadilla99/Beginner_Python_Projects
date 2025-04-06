@@ -34,9 +34,7 @@ try:
         #placeholders = ",".join() 
         new_cursor.executemany(f"INSERT INTO {table_name} VALUES", rows)
         
-    #cursor.execute('''CREATE TABLE IF NOT EXISTS personal (First Name, Last Name, Birthday, Age)''') 
-    #rows = cursor.execute("INSERT INTO personal VALUES('Josue', 'Padilla', '05-12-1999', '25')")
-    #print(tabulate(rows, headers=['ID', 'First Name', 'Josue'], tablefmt='pretty'))
+    
     new_connection.commit()      
     new_connection.close()  
     
